@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WenuxRP - Oficiální stránky</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* Hero sekce s animovaným gradientem */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(-45deg, #7b3fe4, #4b0082, #8a2be2, #6a0dad);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 20px;
+            animation: glow 2s infinite alternate;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #bbb;
+            margin-bottom: 30px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #7b3fe4, 0 0 10px #7b3fe4; }
+            50% { text-shadow: 0 0 15px #a366ff, 0 0 30px #a366ff; }
+            100% { text-shadow: 0 0 5px #7b3fe4, 0 0 10px #7b3fe4; }
+        }
+
+        /* Discord button s hover efektem */
+        .discord-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
+            background: #7289da;
+            color: #fff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .discord-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .discord-btn:hover {
+            background: #5b6eae;
+            transform: scale(1.05);
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            border-bottom: 2px solid #7b3fe4;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover { background: #7b3fe4; color: #fff; }
+
+        /* Main content */
+        main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+
+        section { margin-bottom: 40px; }
+        h2 { color: #7b3fe4; margin-bottom: 15px; font-size: 1.8rem; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        /* Staff cards */
+        .staff-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .staff-card {
+            background: #1a1a1a;
+            border: 2px solid #7b3fe4;
+            border-radius: 10px;
+            padding: 15px;
+            flex: 1 1 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .staff-card:hover { transform: scale(1.05); }
+        .staff-card h3 { color: #7b3fe4; margin-bottom: 5px; }
+        .staff-card p { color: #bbb; margin-bottom: 10px; }
+
+        /* Footer */
+        footer {
+            background: #1c1c1c;
+            text-align: center;
+            padding: 15px;
+            border-top: 3px solid #7b3fe4;
+        }
+
+        /* Responsivita */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav a { margin: 5px 0; }
+            .staff-container { flex-direction: column; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero sekce -->
+    <div class="hero">
+        <h1>WenuxRP</h1>
+        <p>Oficiální stránky serveru</p>
+        <a href="https://discord.gg/tvujdiscord" class="discord-btn" target="_blank">
+            <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord Logo">
+            Připojit se na Discord
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#pravidla">Pravidla</a>
+        <a href="#staff">Staff</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Pravidla -->
+        <section id="pravidla">
+            <h2>Pravidla serveru</h2>
+            <ul>
+                <li>Respektuj ostatní hráče – žádné urážky nebo trolling.</li>
+                <li>RP musí být realistické – žádný powergaming ani metagaming.</li>
+                <li>Cheaty a exploity nejsou povoleny – každý cheat bude penalizován.</li>
+                <li>Dodržuj pokyny administrátorů a moderátorů.</li>
+                <li>Všechna roleplay situace musí být logické a v rámci serveru.</li>
+                <li>Zbraně a vozidla používej pouze podle RP situace.</li>
+                <li>Nezneužívej bugy nebo exploity, hlášení jsou povinná.</li>
+                <li>Do roleplay situací nezapojuj osobní spory nebo metagaming.</li>
+                <li>Hráčům se nesmí bránit ve free RP (RP musí být fair a logické).</li>
+                <li>Ostatní hráče nelze nutit k akcím, které neodpovídají RP.</li>
+            </ul>
+        </section>
+
+        <!-- Staff -->
+        <section id="staff">
+            <h2>Staff serveru</h2>
+            <div class="staff-container">
+                <div class="staff-card">
+                    <h3>Owner</h3>
+                    <p>Hlavní administrátor serveru WenuxRP</p>
+                    <a href="https://discord.gg/tvujdiscord" class="discord-btn" target="_blank">
+                        <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord Logo"> Kontakt Discord
+                    </a>
+                </div>
+                <div class="staff-card">
+                    <h3>Admin</h3>
+                    <p>Správa serveru a podpora hráčů</p>
+                    <a href="https://discord.gg/tvujdiscord" class="discord-btn" target="_blank">
+                        <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord Logo"> Kontakt Discord
+                    </a>
+                </div>
+                <div class="staff-card">
+                    <h3>Moderátor</h3>
+                    <p>Kontrola RP a pravidel</p>
+                    <a href="https://discord.gg/tvujdiscord" class="discord-btn" target="_blank">
+                        <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord Logo"> Kontakt Discord
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Pro podporu a otázky nás kontaktujte na našem Discordu:</p>
+            <a href="https://discord.gg/tvujdiscord" class="discord-btn" target="_blank">
+                <img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png" alt="Discord Logo"> Připojit se na Discord
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 WenuxRP. Všechna práva vyhrazena.
+    </footer>
+
+</body>
+</html>
